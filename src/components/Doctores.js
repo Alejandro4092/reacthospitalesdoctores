@@ -26,6 +26,7 @@ componentDidMount=()=>{
 componentDidUpdate=(oldProps)=>{
     if(oldProps.idHospital!==this.props.idHospital){ 
         this.loadDoctores();
+        // Limpiamos el idDoctor del state para que no se vean los detalles cunado cambias de hospital
         this.setState({
           idDoctor:null
 

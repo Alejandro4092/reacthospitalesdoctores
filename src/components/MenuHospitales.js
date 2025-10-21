@@ -57,7 +57,7 @@ componentDidMount=()=>{
           </ul>
         </li>
         <li className="nav-item">
-          <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+          <NavLink  className="nav-link active" to="/create">Crear Hospital</NavLink>
         </li>
       </ul>
       
