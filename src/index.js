@@ -10,12 +10,14 @@ import reportWebVitals from './reportWebVitals';
 import Home from './components/Home';
 import MenuHospitales from './components/MenuHospitales';
 import Router from './Router';
+import DetallesDoctor from './components/DetallesDoctor';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
     <Router/>
+    
  
 );
 
