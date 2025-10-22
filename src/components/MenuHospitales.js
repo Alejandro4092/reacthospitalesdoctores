@@ -59,6 +59,10 @@ componentDidMount=()=>{
         <li className="nav-item">
           <NavLink  className="nav-link active" to="/create">Crear Hospital</NavLink>
         </li>
+        
+        <li className="nav-item">
+          <NavLink  className="nav-link active" to="/hospitales">Hospital</NavLink>
+        </li>
       </ul>
       
       

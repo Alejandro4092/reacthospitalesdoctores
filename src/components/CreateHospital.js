@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Global from '../Global'
 import axios from 'axios'
 import { event } from 'jquery';
+import { Navigate } from 'react-router-dom';
 
 export default class CreateHospital extends Component {
     cajaID=React.createRef();
@@ -26,16 +27,23 @@ export default class CreateHospital extends Component {
             console.log("Hospital creado");
             console.log(response);
             this.setState({
-                mensaje:"Hospital insertado:" + hospital.nombre
+                mensaje:"Hospital insertado:" + hospital.nombre,
+                status:true
             })
         })
     }
     state={
-        mensaje:""
+        mensaje:"",
+        status:false
     }
   render() {
     return (
       <div>
+        {
+          this.state.status== true &&
+          <Navigate to="/hospitales" />
+        }
+        
         <h1>CreateHospital</h1>
         <form>
             <label>ID:</label>
